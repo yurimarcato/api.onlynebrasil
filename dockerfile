@@ -14,10 +14,10 @@ RUN npm install --production
 COPY . .
 
 # Exponha a porta definida na variável de ambiente ou a padrão 3333
-EXPOSE 3333
+EXPOSE 3000
 
 # Defina a variável de ambiente para a porta (caso não seja passada de fora)
-ENV PORT=3333
+ENV PORT=3000
 
 # Comando para iniciar a API
 CMD ["npm", "start"]

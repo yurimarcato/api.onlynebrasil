@@ -7,13 +7,13 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3333:3333"
+      - "3000:3000"
     environment:
       - MYSQL_HOST=193.203.175.122
       - MYSQL_USER=u389104733_root
       - MYSQL_PASSWORD=15324948@Yu
       - MYSQL_DB=u389104733_shoplink
-      - PORT=3333
+      - PORT=3000
     depends_on:
       - mysql
 
